@@ -1,0 +1,177 @@
+/*general style*/
+body{
+    font-family: lucida sans;
+}
+.sesctions{
+    padding: 20px 0;
+}
+section-header .section-title{
+    font-size: 40px;
+}
+section-header .line{
+    width: 150px;
+    background: #ddd;
+    height: 3px;
+    margin: auto;
+}
+.line span{
+    display: block;
+    width: 100px;
+    height: 4px;
+    background-color: #71F913;
+    margin: auto;
+    position: relative;
+    bottom: 0.5px;
+}
+.section-header p{
+    width: 500px;
+    color: #888;
+    margin: 20px auto;
+line-height: 1.5;
+}
+/*header*/
+header{
+    height: auto;
+    padding: 10px 0;
+   
+  position: fixed;
+    width: 100%;
+    z-index: 999;
+}
+.overlay{
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0,0,0,0.5);
+}
+header i.icon{
+    position: absolute;
+    right: 30px;
+    top: 32px;
+    z-index: 10;
+  display: none;
+    color: white;
+}
+header log h2{
+    font-size: 35px;
+    color: #fff;
+}
+header nav .nav-list{
+    list-style: none;
+    display: flex;
+        justify-content: space-around;
+    margin-bottom: 0;
+
+}
+
+
+header nav .nav-list .list a{
+     display: block;
+ padding: 15px 0; 
+    font-size: 15px;
+    margin: 9px 0;   
+    text-decoration: none;
+    transition:  all 03s ease-in-out;
+ color: #fff;
+}
+
+
+header nav .nav-list .list a:hover{
+color: antiquewhite;
+}
+.sticky{
+    background:#000;
+    color: #fff;
+}
+@media (max-width:575px){
+    
+    header{
+        background: #000;
+    }
+   header nav .nav-list{
+       text-align: center;
+       display: none; 
+          }
+   header .logo {
+     color: #fff;
+       text-align: center;
+    }
+    header i.icon{
+  display: block;
+}
+}
+/*home section*/
+.home{
+    height: 650px;
+    background-image:url(./image.jpeg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.home-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    
+}
+.home .home-title{
+    color: white;
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+.home .home-desc{
+    color: white;
+    font-size: 19px;
+    
+}
+.home button{
+    background:#71F913;
+    color: #fff;
+    width: 150px;
+    text-align: center;
+    padding: 10px 0;
+    border: 0;
+}
+@media(max-width:575px){
+    .home .home-title{
+        font-size: 22px;
+        
+    }
+    .home button{
+        margin-bottom: 10px;
+        border: 0;
+    }
+}
+/*About as */
+.about .about-info h3{
+font-size: 25px;
+    font-weight: normal;
+    margin-bottom: 20px;
+    
+}
+.about .about-info h3 span{
+    color: #71F913;
+    
+}
+.about .about-info .about-info-desc{
+    line-height: 1.8;
+    color: #888;
+    margin-bottom: 20px;
+}
+.about .about-info .about-info-btn{
+    background-color: #71F913;
+    padding: 10px 20px;
+    border: 0;
+    color: #fff;
+    font-weight: bold;
+}
+.about .about-img img{
+    width: 100%;
+}
+
+.test{
+    margin-bottom: 400px;
+}
